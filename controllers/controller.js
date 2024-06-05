@@ -232,6 +232,6 @@ exports.QueryReply = async(req,res)=>{
 
 exports.deleteQuery = async(req,res)=>{
     const id=req.params.id
-    const record= await Query.findByIdAndDelete(id)
-    res.json(record)
+    const deleterecord= await Query.findByIdAndDelete(id)
+    res.json(deleterecord)
 }
